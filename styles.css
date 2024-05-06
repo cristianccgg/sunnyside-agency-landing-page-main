@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Fraunces", serif;
+}
+
+:root {
+  --Soft-red: hsl(7, 99%, 70%);
+  --Yellow: hsl(51, 100%, 49%);
+  --Dark-desaturated-cyan-graphic-design-text: hsl(167, 40%, 24%);
+  --Dark-blue-photography-text: hsl(198, 62%, 26%);
+  --Dark-moderate-cyan-footer: hsl(168, 34%, 41%);
+
+  /* ### Neutral */
+
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --Dark-grayish-blue: hsl(232, 10%, 55%);
+  --Grayish-blue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
+}
+
+.header {
+  color: white;
+  height: 100vh;
+  background-image: url(/images/desktop/image-header.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  background-color: transparent !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.contact {
+  background-color: white;
+}
+
+.contact-btn {
+  color: black !important;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.title {
+  margin-top: 5rem;
+  font-weight: 800 !important;
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+}
+
+.arrow {
+  width: 15px !important;
+  height: 100px;
+  position: relative;
+  animation: moveUpDown 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes moveUpDown {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: calc(
+      25vh - 50px
+    ); /* Esta línea asegura que la flecha no se salga del viewport */
+  }
+}
+
+.subtitle {
+  font-weight: bold;
+  font-size: 2.3rem;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.learn-btn {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.graphic-design,
+.photography {
+  height: auto;
+  aspect-ratio: 1/0.8;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.graphic-design {
+  background-image: url(/images/desktop/image-graphic-design.jpg);
+}
+
+.photography {
+  background-image: url(/images/desktop/image-photography.jpg);
+}
+
+.graphic-design-text-container {
+  padding-bottom: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  color: var(--Dark-desaturated-cyan-graphic-design-text);
+}
+
+.photography-text-container {
+  padding-bottom: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  color: var(--Dark-blue-photography-text);
+}
+
+.graphic-design-title,
+.photography-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.description-graphic-design,
+.description-photography {
+  font-size: 1rem;
+}
+
+.third-row {
+  --bs-aspect-ratio: 50%;
+}
+
+.avatar {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.testimonials-title {
+  font-size: 1rem;
+  letter-spacing: 3px;
+  color: var(--Grayish-blue);
+  font-weight: 800;
+}
+
+.owners {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.job-position {
+  font-size: 0.6rem;
+  color: var(--Grayish-blue);
+}
+
+.footer {
+  color: var(--Dark-moderate-cyan-footer);
+  background-color: hsl(168, 39%, 64%);
+}
+
+.attribution a {
+  color: var(--Dark-moderate-cyan-footer);
+}
+
+a {
+  text-decoration: none;
+  color: var(--Dark-moderate-cyan-footer);
+}
+
+@media screen and (max-width: 760px) {
+  .header {
+    color: white;
+    height: 100vh;
+    background-image: url(/images/mobile/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .subtitle,
+  .description,
+  .learn-btn {
+    text-align: center !important;
+  }
+
+  .subtitle {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 1.3rem;
+  }
+  .text-container {
+    padding: 4rem 2rem !important;
+  }
+  .testimonials-inner {
+    flex-direction: column !important;
+  }
+
+  .graphic-design,
+  .photography {
+    height: auto;
+    aspect-ratio: 1/0.8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+  }
+
+  .avatar {
+    width: 60px;
+    border-radius: 50%;
+  }
+
+  .graphic-design-title,
+  .photography-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .description-graphic-design,
+  .description-photography {
+    font-size: 0.9rem;
+  }
+
+  .graphic-design-text-container,
+  .photography-text-container {
+    padding: 3rem !important;
+  }
+}

@@ -1,68 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  About
-  Services
-  Projects
-  Contact
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-  We are creatives
-
-  Transform your brand
-
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
-
-  Learn more
-
-  Stand out to the right audience
-
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-
-  Learn more
-
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-
-  Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
-  About
-  Services
-  Projects
-  Contact
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- -----------------NAV-BAR STARTS----------- -->
+      <div class="main-containe">
+        <div class="header container-fluid pt-4">
+          <nav class="navbar navbar-expand-md bg-body-tertiary p-0 m-0">
+            <div class="container">
+              <a class="navbar-brand py-0" href="#"><img src="/images/logo.svg"></a>
+              <button
+                class="navbar-toggler "
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse hstack" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-3">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"
+                      >About</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                  </li>
+                  <li class="nav-item contact rounded-5 px-2 p">
+                    <a class="nav-link contact-btn" href="#">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="title-and-arrow d-flex flex-column align-items-center gap-5">
+            <h1 class="title text-center">WE ARE CREATIVES</h1>
+            <img class="arrow" src="/images/icon-arrow-down.svg" alt="arrow">
+          </div>
+        </div>
+            </div>
+          <!-- -----------------NAV-BAR ENDS----------- -->
+        
+        <!-- ----------------------FIRST ROW STARTS----------->
+        <div class="first-row d-flex row p-0 m-0">
+          <div class="first-row-text text-start order-md-0 order-1 col-md-6 d-flex flex-column justify-content-center align-items-center">
+            <div class="text-container order-md-1 order-0  w-75 d-flex flex-column justify-content-between gap-3">
+              <h2 class="subtitle">Transform your brand</h2>
+              <h3 class="description text-start">
+                We are a full-service creative agency specializing in helping brands
+                grow fast. Engage your clients through compelling visuals that do
+                most of the marketing for you.
+              </h3>
+              <h2 class="learn-btn text-start">Learn more</h2>
+            </div>
+          </div>
+          <div class="img-row col-md-6 p-0">
+            <img class="img-fluid w-100" src="/images/desktop/image-transform.jpg" alt="egg-img" />
+          </div>
+        </div>
+        <!-- ----------------------FIRST ROW ENDS----------->
+        <!-- ----------------------SECOND ROW STARTS----------->
+        <div class="second-row row m-0">
+          <div class="img-row col-md-6 p-0">
+            <img class="img-fluid w-100" src="/images/desktop/image-stand-out.jpg" alt="standout" />
+          </div>
+          <div class="second-row-text p-0 text-start col-md-6 d-flex flex-column justify-content-center align-items-center">
+            <div class="text-container p-0 w-75 d-flex flex-column justify-content-between gap-3">
+              <h2 class="subtitle">Stand out to the right audience</h2>
+              <h3 class="description text-start">
+                Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+              </h3>
+              <h2 class="learn-btn text-start">Learn more</h2>
+            </div>
+          </div>
+        
+        </div>
+        <!-- ----------------------SECOND ROW ENDS----------->
+        <!-- ----------------------THIRD ROW STARTS----------->
+        <div class="third-row row m-0">
+          <div class="graphic-design col-md-6 d-flex flex-column justify-content-end">
+              <div class="graphic-design-text-container d-flex flex-column justify-content-between">
+              <h2 class="graphic-design-title text-center">Graphic design</h2>
+              <h3 class="description-graphic-design text-center">
+                Great design makes you memorable. We deliver artwork that
+                underscores your brand message and captures potential clients’
+                attention.
+              </h3>
+            </div>
+          </div>
+          <div class="photography col-md-6 d-flex flex-column justify-content-end">
+            <div class="photography-text-container d-flex flex-column justify-content-between">
+              <h2 class="photography-title text-center">Photography</h2>
+              <h3 class="description-photography text-center">
+                Increase your credibility by getting the most stunning, high-quality
+                photos that improve your business image.
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- ----------------------THIRD ROW ENDS----------->
+        <!-- ----------------------TESTIMONIALS STARTS----------->
+        <div class="testimonials-main p-3 d-flex flex-column align-items-center justify-content-center">
+          <h2 class="testimonials-title text-center mt-5">CLIENT TESTIMONIALS</h2>
+          <div class="testimonials-inner d-flex my-5">
+            <div class="testimonial mb-4 d-flex flex-column align-items-center">
+              <img class="avatar" src="/images/image-emily.jpg" />
+              <h3 class="description text-center p-4">
+                We put our trust in Sunnyside and they delivered, making sure our
+                needs were met and deadlines were always hit.
+              </h3>
+              <h2 class="owners">Emily R.</h2>
+              <h3 class="job-position">Marketing Director</h3>
+            </div>
+            <div class="testimonial d-flex flex-column align-items-center">
+              <img class="avatar" src="/images/image-thomas.jpg" />
+              <h3 class="description text-center p-4">
+                Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
+                success made it a satisfying and enjoyable experience.
+              </h3>
+              <h2 class="owners">Thomas S.</h2>
+              <h3 class="job-position">Chief Operating Officer</h3>
+            </div>
+            <div class="testimonial d-flex flex-column align-items-center">
+              <img class="avatar" src="/images/image-jennie.jpg" />
+              <h3 class="description text-center p-4">
+                Incredible end result! Our sales increased over 400% when we worked
+                with Sunnyside. Highly recommended!
+              </h3>
+              <h2 class="owners">Jennie F.</h2>
+              <h3 class="job-position">Business Owner</h3>
+            </div>
+          </div>
+        </div>
+        <!-- ----------------------TESTIMONIALS ENDS----------->
+        <!-- ----------------------LOWER IMAGES STARTS----------->
+        <div class="lower-imgs-container container-fluid m-0 p-0 row">
+          <img class="col-md-3 col-6 m-0 p-0"
+            src="/images/desktop/image-gallery-milkbottles.jpg"
+            alt="milk-bottles"
+          />
+          <img class="col-md-3  col-6 m-0 p-0" src="/images/desktop/image-gallery-orange.jpg" alt="orange" />
+          <img class="col-md-3 col-6 m-0 p-0" src="/images/desktop/image-gallery-cone.jpg" alt="cone-img" />
+          <img class="col-md-3 col-6 m-0 p-0"
+            src="/images/desktop/image-gallery-sugarcubes.jpg"
+            alt="sugar-img"
+          />
+        </div>
+        <!-- ----------------------LOWER IMAGES ENDS----------->
+        <!-- ----------------------FOOTER STARTS----------->
+        <div class="footer p-5 d-flex flex-column align-items-center justify-content-evenly">
+          <img class="footer-logo" src="/images/Copia de logo.svg" alt="logo">
+          <div class="services-container my-3 d-flex gap-4">
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Projects</a>
+            <a href="">Contact</a></div>
+          <div class="icons-container my-4 d-flex gap-4">
+            <img src="/images/icon-facebook.svg" />
+            <img src="/images/icon-instagram.svg" />
+            <img src="/images/icon-twitter.svg" />
+            <img src="/images/icon-pinterest.svg" />
+          </div>
+          <div class="attribution">
+            </a
+            >. Coded by <a href="#">Cristian Gutierrez</a>.
+          </div>
+        </div>
+        <!-- ----------------------FOOTER ENDS----------->
+        
+      </div>
+    </main>
+  </body>
 </html>
