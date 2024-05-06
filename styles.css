@@ -24,7 +24,7 @@
 .header {
   color: white;
   height: 100vh;
-  background-image: url(/images/desktop/image-header.jpg);
+  background-image: url(./images/desktop/image-header.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -35,6 +35,7 @@
 
 .nav-link {
   color: white !important;
+  font-size: 1.3em;
 }
 
 .contact {
@@ -44,7 +45,7 @@
 .contact-btn {
   color: black !important;
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .title {
@@ -98,11 +99,11 @@
 }
 
 .graphic-design {
-  background-image: url(/images/desktop/image-graphic-design.jpg);
+  background-image: url(./images/desktop/image-graphic-design.jpg);
 }
 
 .photography {
-  background-image: url(/images/desktop/image-photography.jpg);
+  background-image: url(./images/desktop/image-photography.jpg);
 }
 
 .graphic-design-text-container {
@@ -174,7 +175,7 @@ a {
   .header {
     color: white;
     height: 100vh;
-    background-image: url(/images/mobile/image-header.jpg);
+    background-image: url(./images/mobile/image-header.jpg);
     background-size: cover;
     background-position: center;
   }
